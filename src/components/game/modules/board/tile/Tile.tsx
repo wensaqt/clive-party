@@ -1,19 +1,10 @@
-// src/board/tile/tile.ts
 import { Html } from "@react-three/drei";
 import { useState } from "react";
-import type { Tile } from "./tile.interface";
-
-// --- Types globaux ---
-
-export type TileType = "walkable" | "obstacle" | "start" | "finish";
-
-// --- Props pour le component Tile ---
+import type { TileStructure } from "../board.types";
 
 interface TileProps {
-  tile: Tile;
+  tile: TileStructure;
 }
-
-// --- Component Tile 3D ---
 
 export function Tile({ tile }: TileProps) {
   const [hovered, setHovered] = useState(false);

@@ -1,9 +1,9 @@
-import type { Board } from "../../board/board";
+import type { Board } from "../../modules/board/board.types";
 
 // Convertit ton plateau texte en Tile[]
 export const SAVED_BOARD_1: Board = {
-  size: 32,
-  ground: [
+  size: { width: 32, depth: 32 },
+  grounds: [
     {
       position: {
         x: 0,
